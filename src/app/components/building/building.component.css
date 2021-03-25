@@ -1,0 +1,23 @@
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-left{
+  flex: 20%;
+  width: auto;
+}
+
+.flex-item-right {
+  position: relative;
+  padding-left:20%;
+  flex: 80%;
+
+}
+
+hr{
+    border-color: black;
+    overflow-x: auto;
+    white-space: nowrap;
+}

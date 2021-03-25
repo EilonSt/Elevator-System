@@ -1,0 +1,15 @@
+
+.container > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.container > .row > .col-xs-4 {
+  display: inline-block;
+  float: none;
+}
+
+hr{
+  border-color: black;
+  display: inline-block;
+  width: fit-content;
+}

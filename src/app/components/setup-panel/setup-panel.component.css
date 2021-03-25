@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+h3{
+    text-align: center;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+input { 
+    text-align: center; 
+}
+
+.form-group{
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+}
+
+.col-centered{
+    display: block;
+    float: none;
+    margin: 0 auto;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

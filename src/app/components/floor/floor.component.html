@@ -1,0 +1,26 @@
+
+<div class="flex-container">
+     <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="flex-item-left">
+                <label for="floor">
+                    floor: {{floor.floorId }} 
+                </label>
+                <div class="time-box" *ngIf="floor.waitingForElevatorToCome">
+                    elevator arrive in: {{timeboxDisplay}}  
+                </div>
+                <br *ngIf="!floor.waitingForElevatorToCome">
+                <br *ngIf="!floor.waitingForElevatorToCome">
+                <button class="btn btn-success" *ngIf="!floor.waitingForElevatorToCome" (click)="callElevator()">Click here to call an elevator</button>
+                <button class="btn btn-danger" *ngIf="floor.waitingForElevatorToCome" disabled='true'>Click here to call an elevator</button>
+            </div>
+
+            <div class="flex-item-right">
+                <ng-container *ngFor="let elevator of elevators " >
+                        <app-elevator [elevator]='elevator' [class.visible]="elevator.currentFloor!=floor.floorId" ></app-elevator>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>

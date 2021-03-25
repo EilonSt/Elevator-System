@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="flex-container">
+        <div class="row">
+            <div class="flex-left-item col-xs-12 " style="z-index: 1;">
+                <app-floor *ngFor="let floor of floors | reverse" [floor]='floor' ></app-floor>
+                <hr>
+             </div>
+        </div>
+    </div>
+</div>
+

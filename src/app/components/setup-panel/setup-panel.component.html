@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>
+                Welcom to the elevator system!
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+                <h3>
+                    Please fill in the setup information below
+                </h3>
+        </div>
+    </div>
+    <br>
+    <form (ngSubmit)="OnSubmit(f)" #f="ngForm">
+        <div class="row">
+            <div class="col-xs-4 col-centered form-group" >
+                <label for="floors">
+                    Please enter the number of floors in the building:
+                </label>
+                <input type="number" id="floors" name="floors" class="form-control" ngModel required  pattern="^[1-9]+[0-9]*$" >
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4 col-centered form-group">
+                <label for="elevators">
+                        Please enter the number of elevators in the building:
+                </label>
+                <input type="number" id="elevators" name="elevators" class="form-control" ngModel required pattern="^[1-9]+[0-9]*$" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary" type="submit" [disabled]='!f.valid' > Continue </button>
+            </div>
+        </div>
+    </form>
+
+    <img src="data:image/png;base64,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"  
+    alt="">
+ </div>

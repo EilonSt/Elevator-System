@@ -1,0 +1,12 @@
+hr{
+  border-color: black;
+}
+
+.flex-item-left{
+  width: auto;
+  float: left; 
+}
+
+.visible{
+    opacity: 0;
+  }
